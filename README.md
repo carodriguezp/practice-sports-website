@@ -1,5 +1,3 @@
-![modulo-1-evaluacion-final-crodriguez1992] (http://beta.adalab.es/modulo-1-evaluacion-final-crodriguez1992/)
-
 # modulo-1-evaluacion-final-crodriguez1992
 
 ## Description
