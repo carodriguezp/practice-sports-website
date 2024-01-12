@@ -1,0 +1,102 @@
+.main_section-3 {
+    background-color: $color-ligth-grey;
+    padding: 4rem 4rem 2rem;
+    height: 90vh;
+
+    @media (min-width: 768px) {
+        height: 50vh;
+    }
+
+    @media (min-width: 1220px) {
+        height: 45vh;
+    }
+
+
+    h1 {
+        font-family: $font-roboto_slab ;
+        font-size: 2.125rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 1220px) {
+            font-size: 3rem;
+        }
+    }
+
+    &__div {
+        height: 75vh;
+        padding: 0rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: space-around;
+        position: relative;
+        bottom: 2rem;
+        padding-bottom: 3rem;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            height: 38vh;
+        }
+
+
+        &-div {
+            text-align: center;
+            line-height: 1.67;
+
+            @media (min-width: 1220px) {
+                line-height: 2.5;
+            }
+
+            h2 {
+                font-family: $font-roboto_slab;
+                font-size: 1.8rem;
+
+                @media (min-width: 768px) {
+                    font-size: 2.125rem;
+                }
+            }
+
+            p {
+                font-family: $font-roboto;
+                font-size: 1.8rem;
+                margin-top: 0.1rem;
+
+                @media (min-width: 768px) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+    }
+
+
+    &__div-button {
+
+        background-color: $color-bright-orange;
+        color: $color-white;
+        font-size: 2.125rem;
+        border-radius: 22.5px;
+        width: 18rem;
+        height: 4rem;
+        margin: 0 auto;
+        padding: 0.6rem;
+        text-align: center;
+        position: relative;
+        bottom: 6rem;
+
+        p:hover {
+            font-size: 2.5rem;
+            transition: all 1s;
+        }
+
+        @media (min-width: 1220px) {
+            bottom: 10rem;
+        }
+
+    }
+
+
+}

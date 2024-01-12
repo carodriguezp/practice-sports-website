@@ -1,0 +1,187 @@
+.footer {
+    background-color: $color-greyish-brown;
+    color: $color-white;
+    height: 60vh;
+    padding: 6rem;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    @media (min-width: 1220px) {
+
+        justify-content: center;
+        gap: 13rem;
+        height: 26vh;
+    }
+
+    &__div-arrow {
+        background-color: white;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 4.7rem;
+        margin: 0 auto;
+
+
+        @media (min-width: 768px) {
+            right: 50%;
+            width: 3.6rem;
+        }
+
+        @media (min-width: 1220px) {
+            width: 4.5rem;
+        }
+
+        :hover {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+
+        img {
+            height: 1.8rem;
+            transition-duration: 0.8s;
+            transition-property: transform;
+
+
+        }
+
+
+
+    }
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 89%;
+        position: relative;
+        bottom: 2rem;
+
+        @media (min-width: 768px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        @media (min-width: 1220px) {
+            bottom: 0.5rem;
+        }
+
+
+        img {
+            height: 1.8rem;
+        }
+
+        &__div-list {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+            line-height: 1.8;
+            justify-content: space-around;
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                width: 45%;
+                justify-content: space-between;
+                position: relative;
+                top: 2rem;
+                padding-top: 2rem;
+
+            }
+
+            @media (min-width: 1220px) {
+
+                position: relative;
+                top: inherit;
+                right: 2%;
+                width: 33%;
+            }
+
+
+            &_ul {
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    text-align: start;
+
+                }
+
+                @media (min-width: 1220px) {}
+
+                &-li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        font-family: $font-roboto;
+                    }
+                }
+            }
+
+        }
+
+        &__div-copy {
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 10%;
+            align-items: center;
+            position: relative;
+            top: 1rem;
+
+            @media (min-width: 768px) {
+
+                padding-top: 3.5rem;
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1.8rem;
+            }
+
+            @media (min-width: 1220px) {
+                position: relative;
+                top: inherit;
+            }
+
+            p {
+                font-family: $font-roboto;
+
+                @media (min-width: 1220px) {
+                    font-size: 1.3rem;
+
+                }
+            }
+
+            .fa-heart {
+                color: $color-bright-orange;
+                font-size: 0.8rem;
+                position: relative;
+                bottom: 0.19rem;
+            }
+        }
+    }
+
+
+}
